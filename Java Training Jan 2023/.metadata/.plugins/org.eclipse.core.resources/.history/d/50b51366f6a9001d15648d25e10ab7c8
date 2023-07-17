@@ -1,0 +1,17 @@
+package Java.Training.OOPS.feb11;
+
+import java.util.ArrayList;
+
+public class arraylist2 {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<>();
+		list.add(45);
+		list.add(55);
+		list.add(23);
+		list.add(1, 95);
+		for(int i=0;i<list.size();i++) {
+			System.out.println(list.get(i));
+		}
+	}
+}

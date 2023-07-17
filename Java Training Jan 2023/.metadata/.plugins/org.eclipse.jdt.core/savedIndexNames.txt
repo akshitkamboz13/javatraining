@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\Java Softwares\Java Training Jan 2023\.metadata\.plugins\org.eclipse.jdt.core
+2189668368.index
+3661411911.index
+1865797976.index

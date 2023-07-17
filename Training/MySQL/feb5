@@ -1,0 +1,48 @@
+class1 is database
+department is table in class1
+library is table in class1
+
+show databases;                                                                     to show databases
+show tables from xyz;                                                               to show table from xyz(database)
+create database xyz;                                                                to create database
+create table xyz.test1(id int, name varchar(30), class varchar(20),DOB date)        to create table
+drop database xyz;                                                                  to delete database
+drop test1;                                                                         to delete table
+
+// drop - to delete whole table and database
+// truncate - to delete data not structure of table
+
+desc class1.department;                                                             to describe table
+we can use desc and describe both
+insert into class1.department values(1,"shri ram","Btech","2023/02/04");            to insert data
+we can use both " " or " "
+select * from class1.department;                                                    to show data
+alter table class1.department add primary key  (id)                                 to cant allow duplicacy + cant allow null value + sort
+delete from class1.department where id =1;                                          to delete all the row where id is 1
+insert into class1.department values(4,"shambh","Btech",null);                      if there is null data
+delete from class1.department where DOB=null                                        to delete row of null data
+update class1.department set DOB="2021/01/06" where name="shambh";                  to edit any data from row where shambh is name
+use class1;                                                                         to use any database
+insert into library(stu_id) value (1);                                              to insert one value //insert 1 by 1
+update library set name = "Shri ram";                                               to insert in whole coloum under name
+create table student(id int(3) primary key,name varchar(25),place varchar(30) default "moahli");                  to create table with primry key set and default value se
+
+alter table department drop primary key;                                            to remove primary key
+
+alter table library add column name varchar(30);                                    top add column in table
+alter table library drop column name;                                               to drop column in table
+
+alter table library rename student;
+rename table department to dept;
+
+alter table library change book book varchar(30) default "java";                    to change default value
+
+alter table class1.department add primary key  (id)                                 to cant allow duplicacy + cant allow null value + sort
+alter table department drop primary key;                                            to remove primary key
+
+alter table library add constraint fk_library foreign key(stu_id) references department(id);                       to set foreign key
+alter table library drop constraint fk_library;                                                                    to drop foreign key
+//jab tak data child table me ho tab tak usse linked data parent table se delete ni ho sakta after using foreign key
+
+alter table library rename column name to address;                                                                 to change column name
+create table student(id int(3) primary key,name varchar(25),place varchar(30) default "moahli");                  to create table with primry key set and default value se;

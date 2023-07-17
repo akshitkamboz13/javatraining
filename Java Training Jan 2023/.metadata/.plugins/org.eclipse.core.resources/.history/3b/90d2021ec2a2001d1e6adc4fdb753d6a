@@ -1,0 +1,16 @@
+package unknown;
+
+public class reversehello {
+	void fun(String abc){
+		for(int i=abc.length()-1;i>=0;i--) {
+			System.out.println(abc.charAt(i));
+		}
+	}
+	public static void main(String[] args) {
+		String str ="Hello";
+		reversehello obj=new reversehello();
+		obj.fun(str);
+		
+	}
+
+}

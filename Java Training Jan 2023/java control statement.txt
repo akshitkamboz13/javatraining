@@ -1,0 +1,552 @@
+32 16 8 4 2 1
+            1  
+
+
+
+  1 1 1 0
+1 0 0 0 1
+
+0 0 0 0 0 and 0
+
+1 1 1 1 1 or 31
+      or    and
+
+0 0   0      0
+0 1   1      0
+1 0   1      0
+1 1   1      1
+
+
+
+presidence of an operators:
+//arithmetic
+* / (jo pahale aa jaye)
++ -  (jo pahale aa jaye)
+%
+
+
+
+
+
+
+
+
+
+control statements: 
+                  it control the flow of our program
+if
+if else
+else if
+switch
+for
+while
+do while
+break
+continue
+return
+exit
+
+
+
+int a vs int b
+
+
+
+package control_statement;
+
+public class control_statement {
+
+	public static void main(String[] args) {
+		
+		int a=5;
+		int b=9;
+		
+		if(a>b) {
+			System.out.println("a is bigger"+a);
+		}
+		else {
+			System.out.println("b is bigger"+b);
+		}
+	}
+
+}
+
+
+output:
+b is bigger9
+
+
+nested if-else
+
+package control_statement;
+
+public class nested_if_else {
+
+	public static void main(String[] args) {
+		int num1=3,num2=9,num3=6;
+		if(num1>num2) {
+			if(num1>num3) {
+				System.out.println(num1+" is greater");
+			}
+			else {
+				System.out.println(num3+" is greater");
+			}
+		}
+		else {
+			if(num2>num3) {
+				System.out.println(num2+" is greater");
+			}
+			else {
+				System.out.println(num3+" is greater");
+			}
+		}
+
+	}
+
+}
+
+output:
+9 is greater
+
+
+package control_statement;
+
+public class nested_if_else {
+
+	public static void main(String[] args) {
+		int num1=3,num2=9,num3=6;
+		if(num1>num2 && num1>num3) {
+			System.out.println(num1);
+		}
+		else if(num2>num1 && num2>num3) {
+			System.out.println(num2);
+		}
+		else if(num3>num1 && num3>num2) {
+			System.out.println(num3);
+		}
+
+	}
+
+}
+
+output:
+9
+
+
+
+
+
+
+
+
+
+
+package control_statement;
+
+public class nested_if_else {
+
+	public static void main(String[] args) {
+		int a = 70, b= 70, c= 70 , d , e;
+		d=(a+b+c)*100/300;
+		System.out.println("percentage is "+d);
+        if(d>=60) {
+			System.out.println("first div");
+		}
+		if(d>=50 && d<60) {
+			System.out.println("second div");
+		}
+		if(d>=40 && d<50) {
+			System.out.println("third div");
+		}
+		if(d<40) {
+			System.out.println("fail");
+		}
+	}
+
+}
+output:
+percentage is 70
+first div
+
+
+
+
+
+
+
+
+package control_statement;
+
+public class salary {
+
+	public static void main(String[] args) {
+		int sal = 100;
+		char gen ='m';
+		int exp=7;
+		int incr=0;
+		int d;
+		if(gen == 'm') {
+			if(exp>5) {
+				incr=sal*15/100;
+			}
+			if(exp>3 && exp<=5) {
+				incr=sal*10/100;				
+			}
+		}
+		else if(gen == 'f') {
+			if(exp>5) {
+				incr=sal*20/100;				
+			}
+			if(exp>3 && exp<=5) {
+				incr=sal*15/100;	
+			}
+			
+		}
+		System.out.println("salary was "+ sal);
+		System.out.println("increment is "+ incr);
+		d=sal+incr;
+		System.out.println("salary after increment "+d);
+	}
+
+}
+
+
+output:
+salary was 100
+increment is 15
+salary after increment 115
+
+
+
+
+
+
+
+
+
+
+
+
+// 0-5    1/day
+//6-10    2/day
+//11-15   5/day
+//above 15   10/day
+
+
+package control_statement;
+
+public class library {
+
+	public static void main(String[] args) {
+		int days = 35;
+		int fine=0;
+		if(days >= 0 && days<=5) {
+			fine=days*1;
+		}
+		if(days>6 && days<=10) {
+			fine=(days-5)*2+5;
+		}
+		if(days>10 && days <=15) {
+			fine=(days-10)*5+15;
+	    }
+		if(days>15) {
+			fine=(days-15)*10+40;
+		}
+		System.out.println(fine);
+	}
+}
+
+
+output:
+240
+
+
+
+
+
+
+leap or not
+
+package control_statement;
+
+public class leapyear {
+
+	public static void main(String[] args) {
+		int year=2300;
+		if (year%4 == 0 ) {
+			if(year%100 == 0) {
+				if(year%400 == 0) {
+					System.out.println("it is leap year");
+				}
+				else {
+					System.out.println("it is not a leap year");
+				}
+			}
+			else {
+				System.out.println("it is a leap year");
+			}
+		}
+		else {
+			System.out.println("it is not a leap year");
+		}
+
+	}
+
+}
+
+output:
+it is not a leap year
+
+
+
+
+
+
+
+
+
+
+
+looooooop:
+
+
+package loops;
+
+public class forloop 
+{
+
+	public static void main(String[] args) 
+	{
+		int i;
+		for(i=5; i>0; i--) {
+			System.out.println(i);
+		}
+		
+
+	}
+
+}
+
+Outout:
+5
+4
+3
+2
+1
+
+
+
+
+
+
+
+
+
+package loops;
+
+public class table {
+
+	public static void main(String[] args) {
+		int a , b;
+		int c=2023;
+		for(a=1; a<=10; a++) {
+			
+			b=c*a;
+		    System.out.println(c+" * "+a+" = " +b);
+		}
+
+	}
+
+}
+
+
+output:
+2023 * 1 = 2023
+2023 * 2 = 4046
+2023 * 3 = 6069
+2023 * 4 = 8092
+2023 * 5 = 10115
+2023 * 6 = 12138
+2023 * 7 = 14161
+2023 * 8 = 16184
+2023 * 9 = 18207
+2023 * 10 = 20230
+
+
+
+
+
+
+
+package loops;
+
+public class factorial {
+
+
+		public static void main(String[] args) {
+			
+			int b=1;
+			for(int a=10; a>0; a--) {
+                 if(a>1) {
+					System.out.print(a+"*");
+				}
+				else if(a==1) {
+					System.out.print(a+"=");
+				}
+				
+				b=b*a;
+			    
+			}
+			System.out.println(b);	
+
+	}
+
+}
+
+
+output:
+
+10*9*8*7*6*5*4*3*2*1=3628800
+
+
+
+
+
+
+
+
+
+package loops;
+
+public class pwr {
+
+	public static void main(String[] args) {
+		int num=2;
+		int pwrb, power=5;
+		int i=num;
+		for(pwrb=power; pwrb>1; pwrb--) {
+			i=num*i;
+		}
+		System.out.println(i);
+	}																																																																																																								
+}
+
+               OR
+package loops;
+
+public class pwr {
+
+	public static void main(String[] args) {
+		int num=2;
+		int pwrb, power=5;
+		int i=1;
+		for(pwrb=power; pwrb>0; pwrb--) {
+			i=num*i;
+		}
+		System.out.println(i);
+	}																																																																																																								
+}
+
+
+output:
+32
+
+
+
+
+
+
+
+package loops;
+
+public class factor {
+
+	public static void main(String[] args) {
+		int num=28;
+		int i=1, a=0 ;
+		for(i=1; i<=num; i++) {
+			if(num%i==0) {
+				a=a+1;
+				System.out.println(i+" ");
+			}
+		}
+		System.out.println("Total no. of factor "+a);
+
+	}
+
+}
+ 
+
+OUTPUT:
+1 
+2 
+4 
+7 
+14 
+28 
+Total no. of factor 6
+
+
+
+
+
+
+
+package loops;
+
+public class prime_number {
+
+	public static void main(String[] args) {
+		int num=97;
+		int a,c=0;
+		for(a=1;a<num;a++) {
+			if(num%a==0) {
+				c++;
+			}		
+		}
+		if(c==1) {
+		System.out.println("yes");
+		}
+		else {
+			System.out.println("no");
+		}
+	}
+}
+                                               output:  yes
+          OR
+package loops;
+
+public class primenumber2 {
+
+	public static void main(String[] args) {
+		int num=2;
+		int i=1, a=0 ;
+		for(i=1; i<=num; i++) {
+			if(num%i==0) {
+				a=a+1;
+				System.out.println(i+" ");
+			}
+		}
+		System.out.println("Total no. of factor "+a);
+		if(a==2) {
+			System.out.println("yes it is prime number");
+			}
+			else {
+				System.out.println("no it is not a prime number");
+			}
+
+	}
+
+}
+
+output:
+1 
+2 
+Total no. of factor 2
+yes it is prime number
+
+
+
+
+
+

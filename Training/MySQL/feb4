@@ -1,0 +1,18 @@
+show databases;                                                                     to show databases
+show tables from xyz;                                                               to show table from xyz(database)
+create database xyz;                                                                to create database
+create table xyz.test1(id int, name varchar(30), class varchar(20),DOB date)        to create table
+desc class1.department;                                                             to describe table
+insert into class1.department values(1,"shri ram","Btech","2023/02/04");            to insert data
+we can use both " " or " "
+select * from class1.department;                                                    to show data
+alter table class1.department add primary key  (id)                                 to cant allow duplicacy + cant allow null value + sort
+delete from class1.department where id =1;                                          to delete all the row where id is 1
+insert into class1.department values(4,"shambh","Btech",null);                      if there is null data
+delete from class1.department where DOB=null                                        to delete row of null data
+update class1.department set DOB="2021/01/06" where name="shambh";                  to edit any data from row where shambh is name
+use class1;                                                                         to use any database
+insert into library(stu_id) value (1);                                              to insert one value //insert 1 by 1
+
+
+

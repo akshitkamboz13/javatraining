@@ -1,0 +1,43 @@
+package linklists;
+
+import org.w3c.dom.Node;
+
+class node{
+	int data;
+	node next;
+	public static node insertEnd(node head,int d) {
+		node newnode = new node();
+		newnode.data=d;
+		newnode.next=null;
+		if(head==null) {
+			head= newnode;
+			return head;
+		}
+		node temp=head;
+		while(temp.next != null) {
+			temp =temp.next;
+		}
+		temp.next= newnode;
+		return head;
+}
+	public static void display(node head) {
+		node temp = head;
+		while(temp.next!= null) {
+			System.out.println(temp.data+" -> ");
+			temp=temp.next;
+		}
+	
+	}
+}
+public class create {
+	public static void main(String[] args) {
+		node head=null;
+		int d=10;
+		node.insertEnd(head, d);
+		d=60;
+		head= node.insertEnd(head,d);
+		d=70;
+		node.display(head);
+	}
+
+}

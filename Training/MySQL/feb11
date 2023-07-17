@@ -1,0 +1,33 @@
+mysql> select * from student;
++----+----------+----------+--------+
+| id | name     | house    | salary |
++----+----------+----------+--------+
+|  1 | jibran   | srinagar | 120000 |
+|  2 | ronak    | srinagar | 120000 |
+|  3 | waseem   | srinagar | 110000 |
+|  4 | hammad   | srinagar | 100000 |
+|  5 | sandhya  | srinagar |  90000 |
+|  6 | shahanaz | srinagar |  80000 |
+|  8 | zayaan   | badgam   |  60000 |
+|  9 | alyana   | amritsar |  50000 |
++----+----------+----------+--------+
+
+mysql> select salary + salary * 10 / 100 as 'add 10 % sal' from student;
++--------------+
+| add 10 % sal |
++--------------+
+|  132000.0000 |
+|  132000.0000 |
+|  121000.0000 |
+|  110000.0000 |
+|   99000.0000 |
+|   88000.0000 |
+|   66000.0000 |
+|   55000.0000 |
++--------------+
+
+
+
+
+
+

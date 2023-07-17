@@ -1,0 +1,27 @@
+package unknown;
+
+public class uptolow {
+
+	public static void main(String[] args) {
+		String str="HellO";
+		String gtr=str.toUpperCase();
+		String ptr=str.toLowerCase();
+		String olla="",moola="";
+		for(int i=0;i<str.length();i++) {
+			char suui =str.charAt(i);
+			if(str.charAt(i)!=gtr.charAt(i)) {
+				suui =gtr.charAt(i);
+			}
+			else {
+				suui =ptr.charAt(i);
+			}
+			olla=suui+olla;
+		}
+		for(int i=olla.length()-1;i>=0;i--) {
+			moola=moola+olla;
+		}
+		System.out.println(moola);
+
+	}
+
+}
